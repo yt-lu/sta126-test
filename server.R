@@ -100,7 +100,7 @@ server <- function(input, output){
   
   # Output: Textblock 1 ----
   output$textblocknum <- renderText({
-    out <- paste("Data set id:<font color=\"#FF0000\"><b>", input$id,"</b></font>",
+    out <- paste(
                  "<ul>",
                  "<li>Each row represents the regular gas price ($/gal) from one gas station</li>"
                  )
@@ -122,7 +122,7 @@ server <- function(input, output){
   })
   
   output$textblockcat <- renderText({
-    out <- paste("Data set id:<font color=\"#FF0000\"><b>", input$id,"</b></font>",
+    out <- paste(
                  "<ul>",
                  "<li>Each row represents one person in the sample.</li>",
                  "<li>The second column shows people's concerns regarding the stay-at-home restrictions.</li>",
